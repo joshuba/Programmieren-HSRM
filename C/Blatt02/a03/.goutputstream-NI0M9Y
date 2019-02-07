@@ -1,0 +1,57 @@
+#include <stdio.h>
+
+void swap(int *a, int *b){
+    
+    
+}
+
+
+void selectionSort(int *array){
+    int i = 0;
+    int j = 0;
+    int aktzahl;
+    int aktKleinste;
+    
+    for(i; i<20; i++){
+        aktzahl = array[i];
+        aktKleinste = aktzahl;
+        for(j=i+1; j<20-i; j++){
+            if(array[j] < aktKleinste){
+                aktKleinste = array[j];
+            }
+            
+        }
+        
+        if(aktKleinste < aktZahl){
+            array[i] = aktKleinste;
+        }
+    }
+    
+    
+    
+}
+
+
+int main(void){
+    int c = 0;
+    int zahlen [20] = {0};
+    int i = 0;
+   
+    
+    
+    while(scanf("%d", &c) != EOF){
+        zahlen[i] = c;
+        i++;
+    }
+    
+    selectionSort(&zahlen);
+    
+    
+    
+    
+    
+    
+    return 0;
+    
+    
+}
